@@ -1,0 +1,56 @@
+<students>
+    <student>
+        <id>11</id>
+        <name>samsung</name>
+        <unit_price>35000</unit_price>
+        <stock>50</stock>
+        <status>1</status>
+    </student>
+    <student>
+        <id>20</id>
+        <name>HTC</name>
+        <unit_price>65300</unit_price>
+        <stock>35</stock>
+        <status>0</status>
+    </student>
+    <student>
+        <id>30</id>
+        <name>Nokia</name>
+        <unit_price>25100</unit_price>
+        <stock>100</stock>
+        <status>1</status>
+    </student>
+    <student>
+        <id>23</id>
+        <name>Johan</name>
+        <unit_price>35000</unit_price>
+        <stock>50</stock>
+        <status>1</status>
+        <admission_date>25/12/2015</admission_date>
+    </student>
+    <student>
+        <id>29</id>
+        <name>Carter</name>
+        <unit_price>65300</unit_price>
+        <stock>35</stock>
+        <status>0</status>
+        <admission_date>25/12/2015</admission_date>
+    </student>
+    <student>
+        <id>35</id>
+        <name>Bob Marshal</name>
+        <unit_price>25100</unit_price>
+        <stock>100</stock>
+        <status>1</status>
+        <admission_date>13/01/1999</admission_date>
+    </student>
+    <student>
+        <id>40</id>
+        <name>Clark Kent</name>
+        <unit_price>27000</unit_price>
+        <stock>75</stock>
+        <status>1</status>
+        <admission_date>17/06/2015</admission_date>
+    </student>
+</students>
+
