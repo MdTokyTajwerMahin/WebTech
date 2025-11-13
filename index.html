@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation</title>
+</head>
+<body>
+     <script src="script.js"></script>
+  <h3>Name:</h3>
+  <input type="text" id="nameInput" placeholder="Enter your name"><br> 
+  <button id="nameBtn">Submit</button>
+  <br>
+  <p id="nameMsg"></p>
+
+  <h3>Email:</h3>
+  <input type="text" id="emailInput" placeholder="Enter your email">
+  <button id="hintBtn">[i]</button>
+  <br>
+  <button id="emailBtn">Submit</button>
+  <br>
+  <p id="emailMsg"></p>
+
+   <h3>Gender:</h3>
+<fieldset style="display: inline-block; padding: 10px; border: 1px solid black;">
+  <legend>Gender</legend>
+
+  <label style="margin-right: 20px;">
+    <input type="radio" name="gender" value="Male"> Male
+  </label>
+
+  <label style="margin-right: 20px;">
+    <input type="radio" name="gender" value="Female"> Female
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="Other"> Other
+  </label>
+</fieldset>
+<br><br>
+<button id="genderBtn">Submit</button>
+<p id="genderMsg"></p>
+ 
+<h3> Date of Birth</h3>
+  <form id="dobForm" onsubmit="return validateDOB()">
+    <label>Date of Birth</label><br>
+    <input type="text" id="day" placeholder="dd">
+    <input type="text" id="month" placeholder="mm">
+    <input type="text" id="year" placeholder="yyyy">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p id="dobMsg"></p>
+
+  <h3> Degree</h3>
+  <form id="degreeForm" onsubmit="return validateDegree()">
+    <label>Degree</label><br>
+    <input type="checkbox" id="ssc"> SSC
+    <input type="checkbox" id="hsc"> HSC
+    <input type="checkbox" id="bsc"> BSc
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p id="degMsg"></p>
+
+  <h3> Blood Group</h3>
+  <form id="bloodForm" onsubmit="return validateBlood()">
+    <label>Blood Group</label><br>
+    <select id="blood">
+      <option value="">--Select--</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p id="bloodMsg"></p>
+
+  <h3>Profile Picture</h3>
+  <form id="picForm" onsubmit="return validateProfile()">
+    <label>User Id</label>
+    <input type="text" id="userId"><br><br>
+    <label>Picture</label>
+    <input type="file" id="picture"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p id="profileMsg"></p>
+
+
+
+  <h3>ASSIGNMENT</h3>
+  <h2>PERSON PROFILE</h2>
+
+  <table border="1" align="center" cellpadding="5" cellspacing="0">
+    <tr>
+      <th colspan="2">PERSON PROFILE</th>
+    </tr>
+    <form id="profileForm" onsubmit="return validateProfileForm()" onreset="resetMsg()">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" id="email"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" name="gender" value="Female">Female
+          <input type="radio" name="gender" value="Other">Other
+        </td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td>
+          <input type="text" id="day" placeholder="dd" size="2"> /
+          <input type="text" id="month" placeholder="mm" size="2"> /
+          <input type="text" id="year" placeholder="yyyy" size="4">
+          <span style="font-size:12px;">(dd/mm/yyyy)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Blood Group</td>
+        <td>
+          <select id="blood">
+            <option value="">--Select--</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Degree</td>
+        <td>
+          <input type="checkbox" id="ssc">SSC
+          <input type="checkbox" id="hsc">HSC
+          <input type="checkbox" id="bsc">BSc
+          <input type="checkbox" id="msc">MSc
+        </td>
+      </tr>
+      <tr>
+        <td>Photo</td>
+        <td><input type="file" id="photo"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </form>
+  </table>
+</body>
+</html>
