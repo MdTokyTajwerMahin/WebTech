@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Validation</title>
 </head>
+
 <body>
-     <script src="script.js"></script>
+  <script src="script.js"></script>
   <h3>Name:</h3>
-  <input type="text" id="nameInput" placeholder="Enter your name"><br> 
+  <input type="text" id="nameInput" placeholder="Enter your name"><br>
   <button id="nameBtn">Submit</button>
   <br>
   <p id="nameMsg"></p>
@@ -19,27 +21,27 @@
   <br>
   <p id="emailMsg"></p>
 
-   <h3>Gender:</h3>
-<fieldset style="display: inline-block; padding: 10px; border: 1px solid black;">
-  <legend>Gender</legend>
+  <h3>Gender:</h3>
+  <fieldset style="display: inline-block; padding: 10px; border: 1px solid black;">
+    <legend>Gender</legend>
 
-  <label style="margin-right: 20px;">
-    <input type="radio" name="gender" value="Male"> Male
-  </label>
+    <label style="margin-right: 20px;">
+      <input type="radio" name="gender" value="Male"> Male
+    </label>
 
-  <label style="margin-right: 20px;">
-    <input type="radio" name="gender" value="Female"> Female
-  </label>
+    <label style="margin-right: 20px;">
+      <input type="radio" name="gender" value="Female"> Female
+    </label>
 
-  <label>
-    <input type="radio" name="gender" value="Other"> Other
-  </label>
-</fieldset>
-<br><br>
-<button id="genderBtn">Submit</button>
-<p id="genderMsg"></p>
- 
-<h3> Date of Birth</h3>
+    <label>
+      <input type="radio" name="gender" value="Other"> Other
+    </label>
+  </fieldset>
+  <br><br>
+  <button id="genderBtn">Submit</button>
+  <p id="genderMsg"></p>
+
+  <h3> Date of Birth</h3>
   <form id="dobForm" onsubmit="return validateDOB()">
     <label>Date of Birth</label><br>
     <input type="text" id="day" placeholder="dd">
@@ -163,4 +165,5 @@
     </form>
   </table>
 </body>
+
 </html>
