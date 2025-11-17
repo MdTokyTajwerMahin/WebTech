@@ -1,14 +1,18 @@
 let display = document.getElementById("display");
+let container = document.getElementById("buttons");
 
-function press(value) {
-  display.value += value;
-}
+// + button
+let plus = document.createElement("button");
+plus.textContent = "+";
+plus.addEventListener("click", function() {
+    display.value += "+";
+});
+container.appendChild(plus);
 
-function clearAll() {
-  display.value = "";
-}
-
-function calculate() {
-  let result = eval(display.value);
-  display.value = result;
-}
+// - button
+let minus = document.createElement("button");
+minus.textContent = "-";
+minus.addEventListener("click", function() {
+    display.value += "-";
+});
+container.appendChild(minus);
