@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Info Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="form-row" id="formRow">
+            <select id="infoType">
+                <option value="Username">Username</option>
+                <option value="Gender">Gender</option>
+                <option value="Date of Birth">Date of Birth</option>
+                <option value="Degree">Degree</option>
+            </select>
+            <div id="inputContainer">
+                <input type="text" id="infoInput" placeholder="Enter info">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submitBtn">Submit</button>
+            <button id="addBtn">Add</button>
+        </div>
+    </div>
+
+    <div id="infoList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
