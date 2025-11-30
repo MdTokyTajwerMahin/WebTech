@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tokitajwer Mahin">
+    <meta name="description" content="TasteHub Restaurant - Delicious Digital Food Menu">
+    <title>TasteHub Restaurant | Menu</title>
+
+    <style>
+    .dish {
+        margin: 25px 0;
+        padding: 15px;
+        border-bottom: 2px dashed #ccc;
+        overflow: hidden;               
+    }
+    .dish img {
+        width: 100%;                    
+        max-width: 450px;               
+        height: 250px;                  
+        object-fit: cover;              
+        border-radius: 12px;            
+        display: block;
+        margin: 15px auto 0 auto;       
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .price {
+        font-weight: bold;
+        color: #0066cc;
+        font-size: 20px;
+        float: right;                   
+    }
+</style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>TasteHub Restaurant</h1>
+        <p><em>Deliciousness Delivered Fresh Every Day!</em></p>
+    </header>
+
+    
+    <nav>
+        <a href="#starters">Starters</a>
+        <a href="#maincourse">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#booktable">Book a Table</a>
+    </nav>
+
+    <main>
+
+    
+        <section id="starters">
+            <h2>Starters</h2>
+
+           <div class="dish">
+    <strong>Crispy Chicken Wings</strong>
+    <span class="price">$8.99</span><br>
+    Spicy buffalo wings served with blue cheese dip and celery sticks.
+    <img src="https://www.foodandwine.com/thmb/f4GFywSG8d69W2nh_b1Axlr5F54=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/FAW-recipes-crispy-chicken-wings-hero-02-6d627c282d3f4749a176e0ec34d2d6d7.jpg" 
+         alt="Crispy Chicken Wings">
+</div>
+            <div class="dish">
+                <strong>Bruschetta Trio</strong> 
+                <span class="price">$6.99</span><br>
+                Toasted bread topped with tomato-basil, mushroom, and olive tapenade.
+            </div>
+
+            <div class="dish">
+                <strong>Loaded Nachos</strong> 
+                <span class="price">$9.99</span><br>
+                Tortilla chips with cheese, jalapeños, beans, salsa, and sour cream.
+            </div>
+
+            <p class="back-top"><a href="#">Back to Top</a></p>
+        </section>
+        <hr>
+
+        <!-- Main Course Section -->
+        <section id="maincourse">
+            <h2>Main Course</h2>
+
+            <div class="chef-special">
+                <strong>Chef's Special: Grilled Salmon</strong> 
+                <span class="price">$24.99</span><br>
+                Fresh Atlantic salmon with lemon butter sauce, served with mashed potatoes and asparagus.
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400" alt="Grilled Salmon" width="100%" style="margin-top:10px; border-radius:8px;">
+            </div>
+
+            <div class="dish">
+                <strong>Chicken Tikka Masala</strong> 
+                <span class="price">$16.99</span><br>
+                Tender chicken in creamy tomato curry, served with basmati rice and naan.
+            </div>
+
+            <div class="dish">
+                <strong>Beef Steak</strong> 
+                <span class="price">$28.99</span><br>
+                Juicy ribeye steak cooked to perfection with garlic butter and fries.
+            </div>
+
+            <div class="dish">
+                <strong>Veg Pasta Alfredo</strong> 
+                <span class="price">$14.99</span><br>
+                Creamy Alfredo sauce with fresh vegetables and parmesan cheese.
+            </div>
+
+            <p class="back-top"><a href="#">Back to Top</a></p>
+        </section>
+        <hr>
+
+        <!-- Desserts Section -->
+        <section id="desserts">
+            <h2>Desserts</h2>
+
+            <div class="dish">
+                <strong>Chocolate Lava Cake</strong> 
+                <span class="price">$7.99</span><br>
+                Warm chocolate cake with molten center, served with vanilla ice cream.
+                <img src="https://images.unsplash.com/photo-1571115764595-644d2835b15d?w=400" alt="Lava Cake" width="100%" style="margin-top:10px; border-radius:8px;">
+            </div>
+
+            <div class="dish">
+                <strong>Tiramisu</strong> 
+                <span class="price">$6.99</span><br>
+                Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.
+            </div>
+
+            <div class="dish">
+                <strong>Cheesecake Slice</strong> 
+                <span class="price">$5.99</span><br>
+                Creamy New York style cheesecake with berry compote.
+            </div>
+
+            <p class="back-top"><a href="#">Back to Top</a></p>
+        </section>
+        <hr>
+
+        <!-- Drinks Section -->
+        <section id="drinks">
+            <h2>Drinks</h2>
+
+            <div class="dish">
+                <strong>Fresh Lime Soda</strong> 
+                <span class="price">$3.99</span><br>
+                Refreshing mint and lime soda (sweet/salted).
+            </div>
+
+            <div class="dish">
+                <strong>Cold Coffee</strong> 
+                <span class="price">$4.99</span><br>
+                Chilled coffee with ice cream and chocolate syrup.
+            </div>
+
+            <div class="dish">
+                <strong>Virgin Mojito</strong> 
+                <span class="price">$5.99</span><br>
+                Mint, lime, and soda water – perfect summer drink!
+            </div>
+
+            <p class="back-top"><a href="#">Back to Top</a></p>
+        </section>
+
+        <!-- Book a Table Link -->
+        <div style="text-align:center; margin:40px;">
+            <h2 id="booktable"><a href="#" style="color:#e74c3c; text-decoration:none;">Book a Table Now</a></h2>
+            <p>Reserve your spot today!</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>TasteHub Restaurant</h3>
+        <p>123 Food Street, Dhaka, Bangladesh</p>
+        <p>Phone: +880 1234567890</p>
+        <p>Opening Hours: 11:00 AM – 11:00 PM (Everyday)</p>
+        <p>
+            Follow us: 
+            <a href="#" style="color:white;">Facebook</a> | 
+            <a href="#" style="color:white;">Instagram</a>
+        </p>
+        <p>&copy; 2025 TasteHub Restaurant | All Rights Reserved</p>
+        <p><a href="#" style="color:#ecf0f1;">Back to Top</a></p>
+        <p><small>Made with ♥ by Tokitajwer Mahin</small></p>
+    </footer>
+
+</body>
+</html>
