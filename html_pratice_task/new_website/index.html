@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tokitajwer Mahin">
+    <meta name="description" content="DailyFlash - Your Source for Instant News">
+    <title>DailyFlash | Home</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header {
+        background-color: #d32f2f;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+    nav {
+        background-color: #c62828;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    nav a.current {
+        color: yellow;
+        text-decoration: underline;
+    }
+    /* Simple two-column layout using normal float */
+    .container {
+        width: 90%;
+        margin: 30px auto;
+        overflow: hidden;
+    }
+    .articles {
+        width: 68%;
+        float: left;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    aside {
+        width: 28%;
+        float: right;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-left: 5px solid #d32f2f;
+    }
+    article {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px dashed #ccc;
+    }
+    article h2 {
+        color: #d32f2f;
+        margin-bottom: 5px;
+    }
+    article img {
+        width: 100%;
+        height: 220px;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+    .readmore {
+        color: #d32f2f;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .readmore:hover {
+        text-decoration: underline;
+    }
+    footer {
+        clear: both;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+    }
+    h3 {
+        color: #d32f2f;
+        border-bottom: 2px solid #d32f2f;
+        padding-bottom: 8px;
+    }
+    ul {
+        padding-left: 20px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="current">Home</a>
+        <a href="world.html">World</a>
+        <a href="sports.html">Sports</a>
+        <a href="#">Tech</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="articles">
+
+            <article>
+                <h2>World Leaders Meet for Climate Summit 2025</h2>
+                <p><time>November 30, 2025</time></p>
+                <img src="https://images.unsplash.com/photo-1582213782179-796d52f7a85d?w=600" alt="Climate Summit">
+                <p>Over 100 world leaders gathered in Dubai to discuss urgent climate action. New commitments were made to reduce carbon emissions by 50% by 2035...</p>
+                <a href="#" class="readmore">Read More →</a>
+            </article>
+
+            <article>
+                <h2>National Team Wins Asian Championship!</h2>
+                <p><time>November 29, 2025</time></p>
+                <img src="https://images.unsplash.com/photo-1579952363873-27aaa12e2cbf?w=600" alt="Victory">
+                <p>The national football team defeated India 3-1 in the final to claim their first title in 20 years. Millions celebrated across the country...</p>
+                <a href="sports.html" class="readmore">Read More →</a>
+            </article>
+
+            <article>
+                <h2>New Smartphone Sets Record Sales in First Week</h2>
+                <p><time>November 28, 2025</time></p>
+                <img src="https://images.unsplash.com/photo-1592890288564-76628a30a657?w=600" alt="Smartphone">
+                <p>The latest flagship phone sold over 5 million units in just 7 days, breaking all previous records...</p>
+                <a href="#" class="readmore">Read More →</a>
+            </article>
+
+        </section>
+
+        <aside>
+            <h3>Top Headlines</h3>
+            <ul>
+                <li><a href="#">New Vaccine Approved for Global Use</a></li>
+                <li><a href="#">Stock Market Hits All-Time High</a></li>
+                <li><a href="#">Space Mission Successfully Launched</a></li>
+                <li><a href="#">Major Earthquake in Pacific Region</a></li>
+                <li><a href="#">Celebrity Wedding of the Year</a></li>
+            </ul>
+
+            <h3>Editor's Pick</h3>
+            <p><strong>AI Revolution in 2025</strong><br><small>How artificial intelligence is changing everything</small></p>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DailyFlash | All Rights Reserved</p>
+        <p>
+            <a href="#" style="color:white;">Facebook</a> |
+            <a href="#" style="color:white;">X (Twitter)</a> |
+            <a href="#" style="color:white;">Instagram</a> |
+            <a href="#" style="color:white;">LinkedIn</a>
+        </p>
+        <p><small>Made by Tokitajwer Mahin</small></p>
+    </footer>
+
+</body>
+</html>
