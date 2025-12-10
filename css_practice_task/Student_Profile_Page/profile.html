@@ -1,36 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Student Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Student Marks</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 300px;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
 
-   
-    <header>
-        <h1>Welcome to My Profile</h1>
-    </header>
+  <h2>Student Entry</h2>
 
-    
-    <section class="profile">
-        <img src="mahin.jpg" alt="My Photo" width="200" height="200" class="photo">
-        
-        <h2>Mahin Ahmed</h2>
-        <p><strong>Department:</strong> Computer Science</p>
-        <p><strong>Student ID:</strong> CS-2023-00122-48934-3</p>
-        <p><strong>Email:</strong> tokitajwermahin@gmail.com</p>
+  <label>Student Name:</label>
+  <input type="text" id="nameInput">
 
-        <h3>About Me</h3>
-        <p>Hello! I am a student. I love programming and playing football. 
-           I want to become a web developer in the future.</p>
-    </section>
+  <br><br>
 
-   
-    <footer>
-        <p> 2025 Muhammad Ahmed - All rights reserved</p>
-    </footer>
+  <label>Marks:</label>
+  <input type="text" id="marksInput">
+
+  <br><br>
+
+  <button onclick="submitData()">Submit</button>
+
+  <table id="studentsTable">
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+  </table>
+
+  <script>
+    function submitData() {
+      const name = document.getElementById('nameInput').value.trim();
+      const marks = document.getElementById('marksInput').value.trim();
+
+      const namePattern = /^[A-Za-z]+$/;
+
+      if (!namePattern.test(name)) {
+        alert('Name must contain only letters and cannot be empty.');
+        return;
+      }
+
+      const marksValue = Number(marks);
+
+      if (isNaN(marksValue) || marksValue < 0 || marksValue > 100) {
+        alert('Marks must be a number between 0 and 100.');
+        return;
+      }
+
+      const table = document.getElementById('studentsTable');
+      const row = table.insertRow();
+      const nameCell = row.insertCell(0);
+      const marksCell = row.insertCell(1);
+
+      nameCell.textContent = name;
+      marksCell.textContent = marksValue;
+
+      if (marksValue > 50) {
+        row.style.backgroundColor = 'green';
+      } else {
+        row.style.backgroundColor = 'red';
+      }
+
+      document.getElementById('nameInput').value = '';
+      document.getElementById('marksInput').value = '';
+    }
+  </script>
 
 </body>
 </html>
